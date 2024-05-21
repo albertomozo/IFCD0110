@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display : flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  background-color: black;
+  color:white;
+}
+
+#contenido {
+  display: flex;
+  flex-wrap: wrap;
+}
+#contenido .materias {
+  margin: 5px;
+  border: 3px solid black;
+  width: 16%;
+}
+#contenido .materias h3 {
+  text-align: center;
+}
+
+#categorias ul li {
+  margin: 5px 2px;
+  width: 200px;
+  display: inline;
+}
+#categorias ul li a {
+  text-decoration: none;
+  background-color: coral;
+}
+#categorias ul li .active {
+  background-color: blue;
+  color: white;
+}
+
+#iconoCarrito {
+  position:relative;
+  width: 40px;
+  height: 40px;
+  img {
+    position : absolute;
+    bottom: 0px;
+  }
+  border: 1px solid red;
+  color : red;
+  background-color: white;
+}
+
+#numProductos {
+  position:absolute;
+  top:0;
+  right: 0;
+  border-radius:50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#carritoVentana {
+  position: relative;
+  margin: auto auto;
+  width: 50%;
+  z-index: 999;
+
+ 
+}
+
+#circulo_cerrar{
+    position : absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border : 2px solid black;
+    text-align: center;
+    top : -10px;  /* width /2 */
+    right:  -10px;
+    z-index : 1000;
+    overflow:visible;
+    &:hover {
+      cursor:pointer;
+    }
+    background-color: white;
+}
+
+#titulo {
+  width: 80%;
+}
+
+
+.active {
+  background-color: blue;
+  color: white;
+}
+
+.w100por {
+  width: 100%;
+}
+.carrito-marco  {
+  display : inline-block;
+  width: 20px;
+  img {
+    padding-top:3px;
+    width: 100%;
+  }
+}
+
+ 
+#seccion-categorias{
+  display:flex;
+  flex-wrap : wrap;
+  .item-categoria{
+    width: 25%;
+    h2 {
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
